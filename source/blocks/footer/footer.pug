@@ -1,0 +1,36 @@
+.ComingFooter__wrapper
+    .ComingFooter
+        section.ComingFooter__content
+            h1.ComingFooter__title О нас
+            p.ComingFooter__text  Мы группа молодых, но опытных и талантливых веб-разработчиков, которая мечтает сделать интернет немного интересней!</p>
+
+        section.ComingFooter__content
+            h1.ComingFooter__title Контакты
+            a.ComingFooter__contact(href="tel:+79043390832") +7(904)339-08-32
+            a.ComingFooter__contact(href="mailto:aleksnc@mail.ru") aleksnc@mail.ru
+
+        section.ComingFooter__content
+            h1.ComingFooter__title Обратная связь
+            .postForm
+                input.postForm__text(name="YourName" type="text" id="YourName"  placeholder="Как вас зовут")
+                br
+                input.postForm__text(name="YourEmail" type="text" id="YourEmail" placeholder="Ваша почта")
+                br
+                input.postForm__text(name="YourSubject" type="text" id="YourSubject" placeholder="Тема сообщения")
+                br
+                textarea.postForm__text.message(rows="2" cols="20" placeholder="Сообщение" style="resize: none; overflow-y: hidden; position: absolute; top: 0px; left: -9999px; height: 34px; width: 238px; line-height: normal; text-decoration: none solid rgb(136, 136, 136); letter-spacing: 0px;" tabindex="-1")
+
+                textarea(name="Comments" rows="2" cols="20" id="Comments" class="postForm__text message" placeholder="Сообщение" style="resize: none; overflow-y: hidden;")
+
+                input#btnSubmit.postForm__btn(type="submit" name="btnSubmit" value="Send")
+
+    .ComingFooter__footer
+        .developedBy
+            div   © 2017 -
+                a( href="/" title="")
+                    strong 4A group
+
+            div
+                a( href="4agroup.ru" title="" target="_blank") Developed by - 4a Group
+
+

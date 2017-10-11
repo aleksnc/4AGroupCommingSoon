@@ -1,0 +1,89 @@
+
+<!--mixin mainMenu(name,prefix, ...items)-->
+<!--    if prefix != null-->
+<!--        div(class=name + '__wrapper')-->
+<!--            nav(class=name +' '+ name+prefix)-->
+<!--                each item in items-->
+<!--                    a( href="#" class=name + '__link')-->
+<!--                        span&attributes(attributes)= item-->
+<!--    else-->
+<!--        div(class=name + '__wrapper ')-->
+<!--            nav(class=name)-->
+<!--                a( href="#" class='mobileMenu js_mobileMenu')-->
+<!--                each item in items-->
+<!--                    a( href="#" class=name + '__link')-->
+<!--                        span&attributes(attributes)= item-->
+<!--            include login/login.pug-->
+<!---->
+<!--mixin tabsContent(name, ...items)-->
+<!--    each item, index in items-->
+<!--        div(class=name + '__linkWrapper')-->
+<!--            a( href="#" class=name + '__link')-->
+<!--                img(class=name + '__img' src='/images/tempImg/'+(index+1)+'.jpg')-->
+<!--                span(class=name + '__name')&attributes(attributes)= item--><!DOCTYPE !>
+<html lang="ru">
+  <head>
+    <title>4A Group: Revolution WEB.</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Condensed" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/MainCss.css"/>
+  </head>
+  <body>
+    <div class="allContent__wrapper">
+      <div class="allContent">
+        <div class="ComingHeader__wrapper">
+          <div class="ComingHeader__wrap">
+            <div class="ComingHeader"><img class="logo" src="/images/logo.png"/>
+              <div class="ComingHeader__slogan">Делаем сайты с удовольствием</div>
+            </div>
+          </div>
+        </div>
+        <!--include inputSend/inputSend.pug-->
+        <div class="ComingContent__wrapper">
+          <div class="ComingContent">
+            <div class="ComingContent__content">
+              <p>Мы собрали в команду лучших из лучших, чтобы создавать<span class="orange"> креативные</span>  сайты!</p>
+              <p>Наш сайт подвергся жестокой самокритике и был отправлен на переработку и уже почти<span class="orange">  готов к старту!</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="ComingFooter__wrapper">
+        <div class="ComingFooter">
+          <section class="ComingFooter__content">
+            <h1 class="ComingFooter__title">О нас</h1>
+            <p class="ComingFooter__text"> Мы группа молодых, но опытных и талантливых веб-разработчиков, которая мечтает сделать интернет немного интересней!</p></p>
+          </section>
+          <section class="ComingFooter__content">
+            <h1 class="ComingFooter__title">Контакты</h1><a class="ComingFooter__contact" href="tel:+79043390832">+7(904)339-08-32</a><a class="ComingFooter__contact" href="mailto:aleksnc@mail.ru">aleksnc@mail.ru</a>
+          </section>
+          <section class="ComingFooter__content">
+            <h1 class="ComingFooter__title">Обратная связь</h1>
+            <div class="postForm">
+              <input class="postForm__text" name="YourName" type="text" id="YourName" placeholder="Как вас зовут"/><br/>
+              <input class="postForm__text" name="YourEmail" type="text" id="YourEmail" placeholder="Ваша почта"/><br/>
+              <input class="postForm__text" name="YourSubject" type="text" id="YourSubject" placeholder="Тема сообщения"/><br/>
+              <textarea class="postForm__text message" rows="2" cols="20" placeholder="Сообщение" style="resize: none; overflow-y: hidden; position: absolute; top: 0px; left: -9999px; height: 34px; width: 238px; line-height: normal; text-decoration: none solid rgb(136, 136, 136); letter-spacing: 0px;" tabindex="-1"></textarea>
+              <textarea class="postForm__text message" name="Comments" rows="2" cols="20" id="Comments" placeholder="Сообщение" style="resize: none; overflow-y: hidden;"></textarea>
+              <input class="postForm__btn" id="btnSubmit" type="submit" name="btnSubmit" value="Send"/>
+            </div>
+          </section>
+        </div>
+        <div class="ComingFooter__footer">
+          <div class="developedBy">
+            <div>  © 2017 -<a href="/" title=""><strong>4A group</strong></a></div>
+            <div><a href="4agroup.ru" title="" target="_blank">Developed by - 4a Group</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script rel="script" src="script/jquery-2.2.3.min.js"></script>
+  <script rel="script" src="script/wavesurfer.min.js"></script>
+  <script rel="script" src="script/waveform-playlist.var.js"></script>
+  <script rel="script" src="script/mainJS.js"></script>
+</html>

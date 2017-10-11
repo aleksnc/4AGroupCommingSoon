@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  min-height: 100vh;
+  font-family: $mainFont;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+  padding: 0;
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  outline: none;
+  cursor: pointer;
+
+  &__wrapper {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--play {
+    font-size: 0;
+    margin-right: 6px;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/play.png);
+
+    &.active {
+      background-image: url(../images/pause.png);
+    }
+  }
+
+  &--back {
+    font-size: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/back.png);
+    background-size: 18px;
+    background-position: 0px center;
+  }
+
+  &--next {
+    font-size: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/next.png);
+    background-size: 18px;
+    background-position: 3px center;
+  }
+
+  &--pause {
+    font-size: 0;
+    width: 26px;
+    height: 26px;
+    background-image: url(../images/pause.png);
+
+    &.active {
+      background-image: url(../images/play.png);
+    }
+  }
+
+  &--download {
+    padding: 13px;
+    background-image: url("../images/download.png");
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &--add {
+    padding: 25px 25px 0 0;
+    background-image: url("../images/add.png");
+    display: inline-block;
+    vertical-align: middle;
+    transition: transform 0.3s;
+
+    &.active {
+      transform: rotate(135deg);
+      transition: transform 0.3s;
+    }
+  }
+
+  &--basket {
+    padding: 0;
+    padding-top: 30px;
+    background-image: url(../images/cart.png);
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 26px;
+    position: relative;
+    min-width: 32px;
+    span {
+      color: $oneColor;
+      font-size: 12px;
+    }
+  }
+
+  &--pay {
+    font-size: 18px;
+    border: 1px solid $twoColor;
+    background-color: $oneColor;
+    color: #fff;
+    padding: 0px 25px;
+  }
+}
